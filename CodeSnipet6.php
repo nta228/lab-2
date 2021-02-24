@@ -1,10 +1,17 @@
+<HTML>
+<HEAD>
+    <TITLE>Static Variable</TITLE>
+</HEAD>
+<BODY>
 <?php
-error_reporting(-1);
+function decrement()
+{
+    static $static_int1 = 99;
+    $static_int1--;
+    echo "The decrement value is $static_int1";
+}
 
-
-define("NAME", "John Smith");
-echo NAME;
-echo "<br>";
-echo name;
-echo "<br>";
+decrement();
 ?>
+</BODY>
+</HTML>
